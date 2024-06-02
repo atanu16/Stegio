@@ -1,3 +1,35 @@
+const texts = [
+  "Encrypting", "Decrypting", "Hiding text" , "Inside a image"
+];
+const delay = 1000; 
+const typingSpeed = 100;
+let index = 0;
+
+function typeText() {
+  if (index >= texts.length) {
+    index = 0; 
+  }
+  
+  const currentText = texts[index];
+  let textIndex = 0;
+  
+  const typingInterval = setInterval(() => {
+    document.getElementById('typing-text').textContent = currentText.slice(0, textIndex);
+    textIndex++;
+    
+    if (textIndex > currentText.length) {
+      clearInterval(typingInterval);
+      index++;
+      setTimeout(typeText, delay);
+    }
+  }, typingSpeed);
+}
+
+
+typeText();
+
+
+
 var preloader = document.getElementById("Loading");
 function myfung() {
   preloader.style.display = "none";
@@ -7,29 +39,29 @@ function myfung() {
 
 document.getElementById("currentYear").innerText = new Date().getFullYear();
 
-// Get current date and time
+
 function updateDateTime() {
   const now = new Date();
 
-  // Format the date as dd/mm/yyyy
+ 
   const day = String(now.getDate()).padStart(2, "0");
   const month = String(now.getMonth() + 1).padStart(2, "0"); // Month is zero-based
   const year = now.getFullYear();
 
   const date = `${day}/${month}/${year}`;
 
-  // Get current time
+
   const time = now.toLocaleTimeString();
 
-  // Update current date and time in the DOM
+
   const currentDateTime = `${date} ${time}`;
   document.getElementById("currentDateTime").textContent = currentDateTime;
 }
 
-// Call updateDateTime function initially
+
 updateDateTime();
 
-// Call updateDateTime function every second to update the time
+
 setInterval(updateDateTime, 1000);
 
 function showEncryptForm() {

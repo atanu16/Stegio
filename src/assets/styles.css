@@ -18,6 +18,29 @@
   z-index: 99999;
 }
 
+#typing-text {
+ 
+
+    text-align: center;
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide overflow text */
+  /* display: inline-block; */
+}
+
+#typing-text::after {
+  content: '';
+  border-right: 2px solid black; /* Cursor effect */
+  animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(243, 243, 243);
+  }
+}
 
 body {
 background-color: #201f24;
@@ -32,13 +55,9 @@ margin: 0;
 padding: 0;
 }
 
-.brand{
-  padding-top: 30px;
-}
-
-#word
+.word
 {
-    
+  padding-top: 30px;
     font-family: 'lulo_cleanoutline_bold';
     font-size: 3em;
     color: white;
@@ -46,8 +65,8 @@ padding: 0;
 }
 #word2
 {
-    
-    font-family: 'lulo_cleanoutline_bold';
+  font-family: 'Arial', sans-serif;
+    /* font-family: 'lulo_cleanoutline_bold'; */
     font-size: 3em;
     color: rgb(255, 255, 255);
 
@@ -121,7 +140,7 @@ input::placeholder {
   outline: none;
 }
 
-/* file upload button */
+
 input[type="file"]::file-selector-button {
   border-radius: 4px;
   padding: 0 16px;
@@ -134,12 +153,12 @@ input[type="file"]::file-selector-button {
   transition: background-color 200ms;
 }
 
-/* file upload button hover state */
+
 input[type="file"]::file-selector-button:hover {
   background-color: #f3f4f6;
 }
 
-/* file upload button active state */
+
 input[type="file"]::file-selector-button:active {
   background-color: #e5e7eb;
 }
