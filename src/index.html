@@ -11,6 +11,9 @@
 
  <body onload="myfung()">
   <div id="Loading"></div>
+  <!-- <video class="vid" autoplay loop muted plays-inline>
+    <source src="https://mylivewallpapers.com/wp-content/uploads/Fantasy/PREVIEW-Tea-with-a-Demon.mp4" type="video/mp4">
+</video> -->
   <div class="navbar">
     <div class="navbar-left">
       <img class="logo" src="https://i.ibb.co/jZn0m7c/image-removebg-preview-5.png" alt="Logo" width="40" height="40"> 
@@ -33,7 +36,7 @@
        <h2 id="word2">Encrypt Data</h2>
        
        <input type="file" id="cover-image" accept="image/*">
-       <input type="text" id="secret-key" placeholder="Enter security key">
+       <input type="text" id="secret-key" placeholder="Enter security key (Numbers only)">
        <input type="text" id="hidden-text" placeholder="Enter text to hide">
        
        <button onclick="hideText()">Encrypt</button>
@@ -46,10 +49,8 @@
        <button onclick="revealText()" >Decrypt</button>
      </div>
      <canvas id="canvas" style="display:none;"></canvas>
-    
-     
-     <div id="output-message">
-     </div>
+
+     <div id="output-message"></div>
    </div>
    <!-- Footer -->
    <footer class="footer">

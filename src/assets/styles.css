@@ -1,6 +1,28 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
 
+.vid{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media (min-aspect-ratio:16/9){
+  .vid{
+      width: 100%;
+      height: auto;
+  }
+}
+
+@media (max-aspect-ratio:16/9){
+  .vid{
+      width: auto;
+      height: 100%;
+  }
+}
+
+
 
 @font-face {
   font-family: 'lulo_cleanoutline_bold';
@@ -46,7 +68,7 @@ body {
 background-color: #201f24;
 justify-content: center;
 align-items: center;
-background-image: url("https://i.ibb.co/0V6nSrr/astronaut-cat-moon-digital-art-4k-wallpaper-uhdpaper-com-261-0-j.jpg");
+background-image: url("https://github.com/atanu16/Stegio/assets/83860778/6e6076a5-a6bc-4962-b2a7-68089fcd2130");
 object-fit: contain;
 background-attachment: fixed;
 background-size: cover;
@@ -112,10 +134,11 @@ h1, h2 {
   color: black;
 }
 .form-container {
-  border: 1px solid #2929292f;
+  border: 1px solid #9b9b9b2f;
   padding: 20px;
   margin-bottom: 20px;
-  backdrop-filter: blur(4px); 
+  backdrop-filter: blur(10px);
+  border-radius: 20px; 
 }
 .form-container input {
   width: calc(100% - 20px);
@@ -128,10 +151,11 @@ h1, h2 {
 }
 
 input {
-  background-color: rgba(255, 255, 255, 0.301); /
+  background-color: rgba(255, 251, 251, 0.322); 
+  color: white;
 }
 input::placeholder {
-  color: rgb(68, 68, 68);
+  color: rgba(253, 253, 253, 0.774);
 }
 
 .form-container input:focus {
