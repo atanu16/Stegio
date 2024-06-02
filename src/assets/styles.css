@@ -134,7 +134,7 @@ h1, h2 {
   color: black;
 }
 .form-container {
-  border: 1px solid #9b9b9b2f;
+  border: 1px solid #9b9b9b15;
   padding: 20px;
   margin-bottom: 80px;
   backdrop-filter: blur(10px);
@@ -145,7 +145,7 @@ h1, h2 {
   margin-bottom: 10px;
   padding: 10px;
   font-size: 16px;
-  border: 1px solid #cccccc48;
+  border: 1px solid #cccccc1a;
   border-radius: 5px;
   transition: border 0.3s, box-shadow 0.3s;
 }
@@ -156,10 +156,11 @@ input {
 }
 input::placeholder {
   color: rgba(253, 253, 253, 0.5);
+  font-family: 'Arial', sans-serif;
 }
 
 .form-container input:focus {
-  border-color: #ffffff6e;
+  border-color: #ffffff34;
   box-shadow: 0 0 5px #080808(0, 123, 255, 0.5);
   outline: none;
 }
