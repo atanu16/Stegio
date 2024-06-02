@@ -8,7 +8,7 @@
 
 This Website implements an image steganography tool that allows users to hide secret messages within images . The tool consists of functionalities for encoding a message into an image and decoding a hidden message from an image.
 
-If you want a In depth project of image steganography then visit  [here](https://github.com/atanu16/Image-Steganography)
+- If you want a In depth project of image steganography then visit  [here](https://github.com/atanu16/Image-Steganography)
 
 
 
