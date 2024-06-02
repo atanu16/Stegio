@@ -4,7 +4,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "nodemon index.js",
+    "serve": "nodemon server.js --exec 'npm run ping-browser'",
+    "ping-browser": "sleep 2 && curl http://localhost:3001",
+    "browser-sync": "browser-sync start --proxy 'http://localhost:3000' --files 'src/**/*.*' --port 3001"
+
   },
   "author": "Atanu Bera",
   "license": "ISC",
@@ -14,7 +18,11 @@
     "fs": "^0.0.1-security",
     "http": "^0.0.1-security"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "browser-sync": "^3.0.2",
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.2"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/atanu16/Stegio.git"

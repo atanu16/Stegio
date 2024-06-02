@@ -5,7 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Stegio - Image Steganography</title>
 <link rel="stylesheet" href="assets/styles.css">
-<link rel="icon" type="image/x-icon" href="https://i.ibb.co/jZn0m7c/image-removebg-preview-5.png">
+  <!-- Light mode favicon -->
+<link rel="icon" type="image/x-icon" href="https://i.ibb.co/YfGpv3c/image-removebg-preview-8.png">
+
+
+<!-- font awesome -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 
@@ -33,7 +37,7 @@
        <button id="decrypt-btn" onclick="showDecryptForm()">DECODE</button>
      </div>
      <div id="encrypt-form" class="form-container">
-       <h2 id="word2">Encrypt Data</h2>
+       <h2 id="word2"><span class="red">En</span>crypt Data</h2>
        
        <input type="file" id="cover-image" accept="image/*">
        <input type="text" id="secret-key" placeholder="Enter security key (Numbers only)">
@@ -42,7 +46,7 @@
        <button onclick="hideText()">Encrypt</button>
      </div>
      <div id="decrypt-form" class="form-container" style="display: none;">
-       <h2 id="word2">Decrypt Data</h2>
+       <h2 id="word2"><span class="red">De</span>crypt Data</h2>
        
        <input type="file" id="hidden-image" accept="image/*">
        <input type="text" id="reveal-key" placeholder="Enter security key">
@@ -57,7 +61,7 @@
     <div class="footer-left">
         <p class="middle-footer">&copy; <span id="currentYear"></span> Stegio All rights reserved.</p></p>
     </div>
-    <p className="footer-right"><FaGithub /> <a class="url" href='https://github.com/atanu16'><i class="fab fa-github"></i> Atanu Bera</a> </p>
+    <p className="footer-right"><FaGithub /> <a class="url" href='https://github.com/atanu16'><i class="fab fa-github"></i> Atanu</a> </p>
 </footer>
 
 
