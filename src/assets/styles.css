@@ -108,7 +108,7 @@ h1, h2 {
 .option-buttons {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 70px;
 }
 
 .option-buttons button {
@@ -136,7 +136,7 @@ h1, h2 {
 .form-container {
   border: 1px solid #9b9b9b2f;
   padding: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 80px;
   backdrop-filter: blur(10px);
   border-radius: 20px; 
 }
@@ -287,27 +287,6 @@ input[type="file"]::file-selector-button:active {
   color: white;
 }
 
-@media only screen and (max-width: 626px) {
-  #word {
-    font-size: 1em;
-  }
-  .top{
-      padding-top: 30%;
-      padding-bottom: 5%;
-  }
-}
-
-@media (max-width: 768px) {
-  body {
-      background-position: center center;
-  }
-}
-
-@media only screen and (min-width: 600px) and (max-width: 1024px) {
-  .background-changer {
-    background-position: center center; 
-  }
-}
 
 
 
