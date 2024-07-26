@@ -39,7 +39,7 @@
   position: fixed;
   width: 100%;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.61)
+  background: #201f24
   url("load.gif") no-repeat center center;
   background-size: 90px 90px; 
   z-index: 99999;
